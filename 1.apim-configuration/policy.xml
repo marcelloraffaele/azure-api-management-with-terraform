@@ -1,0 +1,18 @@
+<policies>
+    <inbound>
+        <cors allow-credentials="true" terminate-unmatched-request="true">
+            <allowed-origins>
+                <origin>http://localhost:3000</origin>
+            </allowed-origins>
+            <allowed-methods preflight-result-max-age="300">
+                <method>*</method>
+            </allowed-methods>
+            <allowed-headers>
+                <header>*</header>
+            </allowed-headers>
+            <expose-headers>
+                <header>*</header>
+            </expose-headers>
+        </cors>
+    </inbound>
+</policies>
